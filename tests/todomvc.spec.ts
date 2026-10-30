@@ -73,7 +73,7 @@ test.describe('TodoMVC', () => {
       { name: 'simple text', input: 'Pay rent', expected: 'Pay rent' },
       { name: 'unicode and emoji', input: 'Café ☕ 🎉', expected: 'Café ☕ 🎉' },
       { name: 'long text', input: 'A'.repeat(100), expected: 'A'.repeat(100) },
-      { name: 'surrounding spaces are trimmed', input: '   Trim me   ', expected: 'Trim me' },
+      { name: 'surrounding spaces (trimmed)', input: '   Trim me   ', expected: 'Trim me' },
     ];
 
     for (const { name, input, expected } of cases) {
